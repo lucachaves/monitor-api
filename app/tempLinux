@@ -1,0 +1,48 @@
+$ top -l 1
+Processes: 255 total, 3 running, 252 sleeping, 1401 threads
+2017/02/10 22:19:15
+Load Avg: 1.51, 1.47, 1.62
+CPU usage: 28.7% user, 35.8% sys, 36.84% idle
+SharedLibs: 114M resident, 30M data, 22M linkedit.
+MemRegions: 37797 total, 1327M resident, 54M private, 390M shared.
+PhysMem: 3906M used (1031M wired), 188M unused.
+VM: 685G vsize, 621M framework vsize, 19378218(0) swapins, 20444771(0) swapouts.
+Networks: packets: 71409422/86G in, 108926438/99G out.
+Disks: 15734881/220G read, 1872300/121G written.
+
+$ uptime
+22:48  up 3 days,  9:19, 4 users, load averages: 1.48 1.55 1.50
+
+$ uname -a
+Darwin Luizs-MacBook-Air.local 16.3.0 Darwin Kernel Version 16.3.0: Thu Nov 17 20:23:58 PST 2016; root:xnu-3789.31.2~1/RELEASE_X86_64 x86_64
+
+$ df -h
+Filesystem                          Size   Used  Avail Capacity iused      ifree %iused  Mounted on
+/dev/disk1                         112Gi  100Gi   12Gi    90% 2644413 4292322866    0%   /
+devfs                              329Ki  329Ki    0Bi   100%    1138          0  100%   /dev
+map -hosts                           0Bi    0Bi    0Bi   100%       0          0  100%   /net
+map auto_home                        0Bi    0Bi    0Bi   100%       0          0  100%   /home
+localhost:/LfJA3wXpub0oV8ZT_c-qDV  112Gi  112Gi    0Bi   100%       0          0  100%   /Volumes/MobileBackups
+
+$ sw_vers
+ProductName:	Mac OS X
+ProductVersion:	10.12.2
+BuildVersion:	16C67
+
+$ system_profiler SPSoftwareDataType
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 10.12.2 (16C67)
+      Kernel Version: Darwin 16.3.0
+      Boot Volume: Macintosh HD
+      Boot Mode: Normal
+      Computer Name: Luiz’s MacBook Air
+      User Name: Luiz Carlos Rodrigues Chaves (lucachaves)
+      Secure Virtual Memory: Enabled
+      System Integrity Protection: Enabled
+      Time since boot: 3 days 9:42
+
+$ sysctl -n machdep.cpu.brand_string
+Intel(R) Core(TM) i5-4250U CPU @ 1.30GHz

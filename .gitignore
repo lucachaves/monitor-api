@@ -1,0 +1,4 @@
+/node_modules
+/temp
+/.vagrant
+npm-debug.log
